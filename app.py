@@ -1029,10 +1029,10 @@ with ml2:
     render_html("""
     <div class="result-card">
         <div class="result-label">Classification Model</div>
-        <div class="result-title">Support Vector Machine (SVM)</div>
-        <div class="result-value">88.51% ACC</div>
+        <div class="result-title">Logistic Regression</div>
+        <div class="result-value">87.92% ACC</div>
         <div class="result-note">
-            Highest testing accuracy among the evaluated classification models.
+            Best testing accuracy among the evaluated classification models.
         </div>
     </div>
     """)
@@ -1077,19 +1077,19 @@ with st.expander("View complete model comparisons"):
         st.dataframe(
             pd.DataFrame({
                 "Model": [
-                    "SVM",
                     "Logistic Regression",
+                    "SVM",
                     "Random Forest",
                 ],
                 "Training Accuracy (%)": [
-                    88.09,
-                    87.64,
-                    94.49,
+                    87.79,
+                    88.27,
+                    94.40,
                 ],
                 "Testing Accuracy (%)": [
-                    88.51,
-                    88.36,
-                    86.19,
+                    87.92,
+                    87.92,
+                    85.00,
                 ],
             }),
             use_container_width=True,
@@ -1133,8 +1133,8 @@ rq_cards = [
         "RQ3",
         "Machine-Learning Performance",
         "Gradient Boosting achieved the highest regression "
-        "testing R² of 9.29%, while SVM achieved the highest "
-        "classification testing accuracy of 88.51%.",
+        "testing R² of 9.29%, while Logistic Regression achieved the highest "
+        "classification testing accuracy of 87.92%.",
     ),
     (
         "RQ4",
@@ -1208,7 +1208,7 @@ insights = [
     (
         "Insight 05",
         "Classification performs better",
-        "SVM achieved 88.51% testing accuracy, while the best "
+        "Logistic Regression achieved 87.92% testing accuracy, while the best "
         "regression model achieved only 9.29% testing R².",
     ),
     (
