@@ -622,7 +622,7 @@ filtered = analysis_data.copy()
 # GLOBAL SALES DISTRIBUTION
 # =========================================================
 
-render_html('<div class="chart-card">')
+
 
 st.subheader("📈 Global Sales Distribution")
 
@@ -652,7 +652,7 @@ st.plotly_chart(
     use_container_width=True,
 )
 
-render_html('</div>')
+
 
 
 # =========================================================
@@ -684,7 +684,7 @@ c1, c2 = st.columns(2, gap="large")
 # =========================================================
 
 with c1:
-    render_html('<div class="chart-card">')
+    
 
     st.subheader("🏢 Publisher Analysis")
 
@@ -717,7 +717,7 @@ with c1:
         use_container_width=True,
     )
 
-    render_html('</div>')
+    
 
 
 # =========================================================
@@ -725,7 +725,7 @@ with c1:
 # =========================================================
 
 with c2:
-    render_html('<div class="chart-card">')
+    
 
     st.subheader("📅 Release-Year Trend")
 
@@ -763,7 +763,7 @@ with c2:
         use_container_width=True,
     )
 
-    render_html('</div>')
+    
 
 
 # =========================================================
@@ -799,7 +799,7 @@ platform_sales = (
 )
 
 
-render_html('<div class="chart-card">')
+
 
 st.subheader("🏆 Platform Competition — Radial View")
 
@@ -850,7 +850,7 @@ st.plotly_chart(
     use_container_width=True,
 )
 
-render_html('</div>')
+
 
 
 # =========================================================
@@ -873,7 +873,7 @@ with advanced_c1:
         .sort_values(ascending=False)
     )
 
-    render_html('<div class="chart-card">')
+    
 
     st.subheader("🎯 Genre Sales Composition")
 
@@ -911,7 +911,7 @@ with advanced_c1:
         use_container_width=True,
     )
 
-    render_html('</div>')
+    
 
 
 # =========================================================
@@ -920,7 +920,7 @@ with advanced_c1:
 
 with advanced_c2:
 
-    render_html('<div class="chart-card">')
+    
 
     st.subheader("🔥 Platform × Genre Sales Heatmap")
 
@@ -987,7 +987,7 @@ with advanced_c2:
         use_container_width=True,
     )
 
-    render_html('</div>')
+    
 
 
 # =========================================================
